@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
+    <% include ./partial/navbar %>
     <div class="flex-shrink-0 flex px-2 py-3 mr-10 mt-6 items-center space-x-8 justify-end">
         
         <a class="text-gray-800 bg-indigo-100 hover:bg-indigo-200 inline-flex items-center justify-center px-3 py-2 border border-transparent text-lg font-medium rounded-md shadow-lg "
@@ -57,7 +58,7 @@
         <button class="btn btn-xs">Add</button>
       </div>
 
-      <div class="flex gap-3 justify-center items-center text-center">
+      <div class="flex  flex-wrap gap-3 justify-center items-center text-center">
         <div class="flex items-center">
             <button type="button" class="flex items-center w-full px-3 py-2 text-base font-medium text-black bg-white imary border-t border-b border-l rounded-l-md hover:bg-gray-100">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill-add w-6 h-6 mr-2" viewBox="0 0 16 16">
@@ -99,7 +100,7 @@
       <div class="w-full h-auto py-8 flex items-center justify-center gap-4 flex-wrap">
             <button class="bg-blue-50 cursor-pointer rounded-md shadow-md shadow-transparent transition-all duration-300 hover:shadow-indigo-200">
             <svg class="" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 92 92" fill="none">
-            <rect x="0.138672" width="" height="" rx="15" fill="#EDF4FF"/>
+            <rect x="0.138672"  rx="15" fill="#EDF4FF"/>
             <path d="M56.4927 48.6403L57.7973 40.3588H49.7611V34.9759C49.7611 32.7114 50.883 30.4987 54.4706 30.4987H58.1756V23.4465C56.018 23.1028 53.8378 22.9168 51.6527 22.8901C45.0385 22.8901 40.7204 26.8626 40.7204 34.0442V40.3588H33.3887V48.6403H40.7204V68.671H49.7611V48.6403H56.4927Z" fill="#337FFF"/>
             </svg>
             </button>
