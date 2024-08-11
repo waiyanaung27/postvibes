@@ -10,6 +10,10 @@ router.get("/login", function (req, res) {
   res.render("login");
 });
 
+router.get("/register", function (req, res) {
+  res.render("register");
+});
+
 router.get("/createPost", function (req, res) {
   res.render("createpost");
 });
@@ -18,8 +22,16 @@ router.get("/profile", function (req, res) {
   res.render("profile");
 });
 
+router.get("/postdetail", function (req, res) {
+  res.render("postDetail");
+});
+
 router.get("/blank", function (req, res) {
   res.render("blank");
+});
+
+router.get("/accountSetting", function (req, res) {
+  res.render("accountSetting");
 });
 
 module.exports = router;
