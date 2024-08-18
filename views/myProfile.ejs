@@ -8,12 +8,28 @@
   </head>
   <body>
     <% include ./partial/navbar %>
-    <div class="flex-shrink-0 flex px-2 py-3 mr-10 mt-6 items-center space-x-8 justify-end">
-        
-        <a class="text-gray-800 bg-indigo-100 hover:bg-indigo-200 inline-flex items-center justify-center px-3 py-2 border border-transparent text-lg font-medium rounded-md shadow-lg "
+    <div class="flex-shrink-0 px-2 py-3  mt-6 items-center  justify-center">
+        <div class="dropdown">
+            <div tabindex="0" role="button" class="btn m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+              </svg>&nbsp;Create</div>
+            <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+              <li><a href="/createpost">Post</a></li>
+              <li><a href="/createreel">Reel</a></li>
+            </ul>
+          </div>
+        <!-- <a class="text-gray-800 bg-indigo-100 hover:bg-indigo-200 inline-flex items-center justify-center px-3 py-2 border border-transparent text-lg font-medium rounded-md shadow-lg "
             href="/createpost"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
-              </svg>&nbsp;Create post
+              </svg>&nbsp;Create
+        </a> -->
+        <br>
+        <a role="button" class="btn m-1 mx-1 font-medium rounded-circle shadow "
+            href="/editprofile"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+        </svg>&nbsp;Edit Profile 
         </a>
     </div>
     <header class="px-2 py-4 mt-13 flex flex-col justify-center items-center text-center">
@@ -90,6 +106,23 @@
                 3.5k
             </button>
         </div>
+        <div class="dropdown">
+            <div tabindex="0" role="button" class="btn m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+              </svg></div>
+            <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+              <li><a href="#">Unfollow</a></li>
+              <li><a href="#">Unfavorite</a></li>
+            </ul>
+          </div>
+        <!-- <div class="flex items-center">
+            <button type="button" class="w-full bg-white border-t border-b border-l px-3 py-2 rounded-md hover:bg-gray-100">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+                  </svg>
+            </button>
+            
+        </div> -->
       </div>
 
       <!-- Social Icon -->
@@ -258,7 +291,7 @@
             </div>
     
             <div
-                class="mt-5 hover:bg-accent hover:text-white transition duration-300 max-w-sm rounded overflow-hidden shadow-lg">
+                class=" hover:bg-accent hover:text-white transition duration-300 max-w-sm rounded overflow-hidden shadow-lg">
                 <div class="py-4 px-8">
                     <div class="flex gap-2">
                         <img src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw3fHxwZW9wbGV8ZW58MHwwfHx8MTcxMTExMTM4N3ww&ixlib=rb-4.0.3&q=80&w=1080" class="rounded-full h-12 w-12 mb-4"><p>JaxStone<br><small>6 mins ago</small></p></div>
@@ -282,7 +315,7 @@
             </div>
     
             <div
-                class="mt-5 hover:bg-accent hover:text-white transition duration-300 max-w-sm rounded overflow-hidden shadow-lg">
+                class=" hover:bg-accent hover:text-white transition duration-300 max-w-sm rounded overflow-hidden shadow-lg">
                 <div class="py-4 px-8">
                     <div class="flex gap-2">
                         <img src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw3fHxwZW9wbGV8ZW58MHwwfHx8MTcxMTExMTM4N3ww&ixlib=rb-4.0.3&q=80&w=1080" class="rounded-full h-12 w-12 mb-4"><p>JaxStone<br><small>6 mins ago</small></p></div>                    
