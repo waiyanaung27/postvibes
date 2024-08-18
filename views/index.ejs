@@ -1,339 +1,549 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="synthwave">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en" data-theme="aqua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
-  </head>
-  <body>
+</head>
+<body>
     <% include ./partial/navbar %>
-    <!-- <h1>Home page here</h1> -->
-     <div class="flex">
-      <div class="relative w-60">
-      <div class="w-1/6 " >
-      <ul class="menu-sm pl-2  bg-base-100  w-60">  
-        <li>
-          <a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2" 
-                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-            </svg>
-            Home
-          </a>
-        </li>
-        <li>
-          <a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            Reels
-          </a>
-        </li>
-        <li>
-          <a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            Myprofile
-          </a>
-        </li>
-        <li>
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+   
+    <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-menu-button-wide" viewBox="0 0 16 16">
+                <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5z"/>
+                <path d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m10.823.323-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0M0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
               </svg>
-              Help
-            </a>
-          </li>
-          <li>
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-              </svg>
-              settings
-            </a>
-          </li>
-      </ul>
-    </div>
-  </div>
-  
-<div class="w-5/6">
-  <div class="columns-3 mb-4">
-  <div class="card bg-base-100 w-80 shadow-xl">
-    <figure>
-      <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-        alt="Shoes" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">
-        Shoes!
-        <div class="badge badge-secondary">NEW</div>
-      </h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-      <div class="card-actions justify-end">
-        <div class="badge badge-outline">Fashion</div>
-        <div class="badge badge-outline">Products</div>
-      </div>
-    </div>
-  </div>
-  <div class="card bg-base-100 w-80 shadow-xl">
-    <figure>
-      <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-        alt="Shoes" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">
-        Shoes!
-        <div class="badge badge-secondary">NEW</div>
-      </h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-      <div class="card-actions justify-end">
-        <div class="badge badge-outline">Fashion</div>
-        <div class="badge badge-outline">Products</div>
-      </div>
-    </div>
-  </div>
-  <div class="card bg-base-100 w-80 shadow-xl">
-    <figure>
-      <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-        alt="Shoes" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">
-        Shoes!
-        <div class="badge badge-secondary">NEW</div>
-      </h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-      <div class="card-actions justify-end">
-        <div class="badge badge-outline">Fashion</div>
-        <div class="badge badge-outline">Products</div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="columns-3 mb-4">
-  <div class="card bg-base-100 w-80 shadow-xl">
-    <figure>
-      <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-        alt="Shoes" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">
-        Shoes!
-        <div class="badge badge-secondary">NEW</div>
-      </h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-      <div class="card-actions justify-end">
-        <div class="badge badge-outline">Fashion</div>
-        <div class="badge badge-outline">Products</div>
-      </div>
-    </div>
-  </div>
-  <div class="card bg-base-100 w-80 shadow-xl">
-    <figure>
-      <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-        alt="Shoes" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">
-        Shoes!
-        <div class="badge badge-secondary">NEW</div>
-      </h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-      <div class="card-actions justify-end">
-        <div class="badge badge-outline">Fashion</div>
-        <div class="badge badge-outline">Products</div>
-      </div>
-    </div>
-  </div>
-  <div class="card bg-base-100 w-80 shadow-xl">
-    <figure>
-      <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-        alt="Shoes" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">
-        Shoes!
-        <div class="badge badge-secondary">NEW</div>
-      </h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-      <div class="card-actions justify-end">
-        <div class="badge badge-outline">Fashion</div>
-        <div class="badge badge-outline">Products</div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="columns-3 mb-4">
-  <div class="card bg-base-100 w-80 shadow-xl">
-    <figure>
-      <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-        alt="Shoes" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">
-        Shoes!
-        <div class="badge badge-secondary">NEW</div>
-      </h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-      <div class="card-actions justify-end">
-        <div class="badge badge-outline">Fashion</div>
-        <div class="badge badge-outline">Products</div>
-      </div>
-    </div>
-  </div>
-  <div class="card bg-base-100 w-80 shadow-xl">
-    <figure>
-      <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-        alt="Shoes" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">
-        Shoes!
-        <div class="badge badge-secondary">NEW</div>
-      </h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-      <div class="card-actions justify-end">
-        <div class="badge badge-outline">Fashion</div>
-        <div class="badge badge-outline">Products</div>
-      </div>
-    </div>
-  </div>
-  <div class="card bg-base-100 w-80 shadow-xl">
-    <figure>
-      <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-        alt="Shoes" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">
-        Shoes!
-        <div class="badge badge-secondary">NEW</div>
-      </h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-      <div class="card-actions justify-end">
-        <div class="badge badge-outline">Fashion</div>
-        <div class="badge badge-outline">Products</div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="text-center">
-  <button class="btn btn-outline btn-success">Learn more<button>
-</div><br><br>
-<div class="text-center text-3xl" >
-  <h1>Reels</h1>
-</div>
-
-<!-- reels -->
- 
-<div class="card place-items-center bg-base-200 ">
-  <div class="card bg-base-100 w-96  bg-primary-content shadow-xl">
-    <figure class="px-10 pt-10">
-      <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-        alt="Shoes"
-        class="rounded-xl" />
-    </figure>
-    <div class="card-body items-center text-center">
-      <h2 class="card-title">Shoes!</h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-      <div class="card-actions">
-        <button class="btn btn-primary">Buy Now</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="card bg-base-100 w-96 bg-primary-content shadow-xl">
-    <figure class="px-10 pt-10">
-      <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-        alt="Shoes"
-        class="rounded-xl" />
-    </figure>
-    <div class="card-body items-center text-center">
-      <h2 class="card-title">Shoes!</h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-      <div class="card-actions">
-        <button class="btn btn-primary">Buy Now</button>
-      </div>
-    </div>
-  </div>
-
-    <div class="card bg-base-100 w-96 bg-primary-content shadow-xl">
-      <figure class="px-10 pt-10">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes"
-          class="rounded-xl" />
-      </figure>
-      <div class="card-body items-center text-center">
-        <h2 class="card-title">Shoes!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
-        <div class="card-actions">
-          <button class="btn btn-primary">Buy Now</button>
         </div>
-      </div>
+            <div class="menu menu-sm dropdown-content top-0 z-[1] left-0 p-2 w-[229px] text-center bg-base-200 rounded-lg">
+                <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+                      </svg>
+                      <span class="text-[15px] ml-4 text-black">Home</span>
+                </div>
+                <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
+                        <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"/>
+                      </svg>
+                      <span class="text-[15px] ml-4 text-black">Reels</span>
+            
+                </div>
+                <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                      </svg>
+                      <span class="text-[15px] ml-4 text-black">Myprofile</span>
+            
+                </div>
+                <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
+                      </svg>
+                      <span class="text-[15px] ml-4 text-black">Contact</span>
+            
+                </div>
+                <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+                      </svg>
+                      <span class="text-[15px] ml-4 text-black">Noti</span>
+            
+                </div>
+                <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                        <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                      </svg>
+                      <span class="text-[15px] ml-4 text-black">Setting</span>
+            
+                </div>
+                <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"/>
+                        <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z"/>
+                      </svg>
+                      <span class="text-[15px] ml-4 text-black">Logout</span>
+            
+                </div>
+                </div>
+      
     </div>
-  
-  
-</div>
-  </div>
-  
-</div>
+    
+    <div class="hidden lg:flex">
+      <div class="sidebar fixed top-20 bottom-0 lg:left-0 p-2 w-[229px] overflow-y-auto text-center bg-base-200">
+        <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+              </svg>
+              <span class="text-[15px] ml-4 text-black">Home</span>
+        </div>
+        <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
+                <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"/>
+              </svg>
+              <span class="text-[15px] ml-4 text-black">Reels</span>
+    
+        </div>
+        <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+              </svg>
+              <span class="text-[15px] ml-4 text-black">Myprofile</span>
+    
+        </div>
+        <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
+              </svg>
+              <span class="text-[15px] ml-4 text-black">Contact</span>
+    
+        </div>
+        <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+              </svg>
+              <span class="text-[15px] ml-4 text-black">Noti</span>
+    
+        </div>
+        <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+              </svg>
+              <span class="text-[15px] ml-4 text-black">Setting</span>
+    
+        </div>
+        <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"/>
+                <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z"/>
+              </svg>
+              <span class="text-[15px] ml-4 text-black">Logout</span>
+    
+        </div>
+        </div>
+    </div>
+    
+    <div class="flex">
+        <div class="w-[15%]  hidden lg:flex">
+            </div>
+        <div class="lg:w-[85%]">
+            <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+                <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
+                    <div class="rounded overflow-hidden shadow-lg">
+            
+                        <a href="#"></a>
+                        <div class="relative">
+                            <a href="#">
+                                <img class="w-full h-60"
+                                    src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
+                                    alt="Sunset in the mountains">
+                                <div
+                                    class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                                </div>
+                            </a>
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 bg-indigo-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                                    Photos
+                                </div>
+                            </a>
+            
+                            <a href="!#">
+                                <div
+                                    class="text-sm absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                                    <span class="font-bold">27</span>
+                                    <small>March</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="px-6 py-4">
+            
+                            <a href="#"
+                                class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Best
+                                View in Newyork City</a>
+                            <p class="text-gray-500 text-sm">
+                                The city that never sleeps
+                            </p>
+                        </div>
+                        <div class="px-6 py-4 flex flex-row items-center">
+                            <span href="#" class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                                <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
+                  c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
+                  c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="ml-1">6 mins ago</span></span>
+                        </div>
+                    </div>
+                    <div class="rounded overflow-hidden shadow-lg">
+                        <a href="#"></a>
+                        <div class="relative">
+                            <a href="#">
+                                <img class="w-full h-60"
+                                    src="https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
+                                    alt="Sunset in the mountains">
+                                <div
+                                    class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                                </div>
+                            </a>
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 bg-indigo-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                                    Photos
+                                </div>
+                            </a>
+            
+                            <a href="!#">
+                                <div
+                                    class="text-sm absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                                    <span class="font-bold">20</span>
+                                    <small>March</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="px-6 py-4">
+            
+                            <a href="#"
+                                class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Best
+                                Pizza in Town</a>
+                            <p class="text-gray-500 text-sm">
+                                The collection of best pizza images in Newyork city
+                            </p>
+                        </div>
+                        <div class="px-6 py-4 flex flex-row items-center">
+                            <span href="#"
+                                class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center">
+                                <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256 c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128 c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="ml-1">3 mins read</span></span>
+                        </div>
+                    </div>
+                    <div class="rounded overflow-hidden shadow-lg">
+            
+                        <a href="#"></a>
+                        <div class="relative">
+                            <a href="#">
+                                <img class="w-full h-60"
+                                    src="https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
+                                    alt="Sunset in the mountains">
+                                <div
+                                    class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                                </div>
+                            </a>
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 bg-indigo-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                                    Photos
+                                </div>
+                            </a>
+            
+                            <a href="!#">
+                                <div
+                                    class="text-sm absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                                    <span class="font-bold">15</span>
+                                    <small>April</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="px-6 py-4">
+            
+                            <a href="#"
+                                class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Best
+                                Salad Images ever</a>
+                            <p class="text-gray-500 text-sm">
+                                The collection of best salads of town in pictures
+                            </p>
+                        </div>
+                        <div class="px-6 py-4 flex flex-row items-center">
+                            <span href="#"
+                                class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center">
+                                <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256 c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128 c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="ml-1">6 mins read</span></span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+                <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
+                    <div class="rounded overflow-hidden shadow-lg">
+            
+                        <a href="#"></a>
+                        <div class="relative">
+                            <a href="#">
+                                <img class="w-full h-60 h-60"
+                                    src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/bagan-sunrise-igor-djokovic.jpg"
+                                    alt="Sunset in the mountains">
+                                <div
+                                    class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                                </div>
+                            </a>
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 bg-indigo-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                                    Photos
+                                </div>
+                            </a>
+            
+                            <a href="!#">
+                                <div
+                                    class="text-sm absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                                    <span class="font-bold">27</span>
+                                    <small>March</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="px-6 py-4">
+            
+                            <a href="#"
+                                class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Best
+                                Sunset in Bagan</a>
+                            <p class="text-gray-500 text-sm">
+                                Sunset Time with best memories
+                            </p>
+                        </div>
+                        <div class="px-6 py-4 flex flex-row items-center">
+                            <span href="#" class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                                <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
+                  c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
+                  c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="ml-1">6 mins ago</span></span>
+                        </div>
+                    </div>
+                    <div class="rounded overflow-hidden shadow-lg">
+                        <a href="#"></a>
+                        <div class="relative">
+                            <a href="#">
+                                <img class="w-full h-60"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2a4K8ER2cdUZPbURbnbH4_4H3v8PMq6vVOA&s"
+                                    alt="Sunset in the mountains">
+                                <div
+                                    class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                                </div>
+                            </a>
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 bg-indigo-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                                    Photos
+                                </div>
+                            </a>
+            
+                            <a href="!#">
+                                <div
+                                    class="text-sm absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                                    <span class="font-bold">20</span>
+                                    <small>March</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="px-6 py-4">
+            
+                            <a href="#"
+                                class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">New York City</a>
+                            <p class="text-gray-500 text-sm">
+                                Most Amazing view point in New York
+                            </p>
+                        </div>
+                        <div class="px-6 py-4 flex flex-row items-center">
+                            <span href="#"
+                                class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center">
+                                <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256 c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128 c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="ml-1">3 mins read</span></span>
+                        </div>
+                    </div>
+                    <div class="rounded overflow-hidden shadow-lg">
+            
+                        <a href="#"></a>
+                        <div class="relative">
+                            <a href="#">
+                                <img class="w-full h-60 h-60"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGamBgIERLDrSFtIbNcdohRiDgGEOpQ14y7g&s"
+                                    alt="Sunset in the mountains">
+                                <div
+                                    class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                                </div>
+                            </a>
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 bg-indigo-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                                    Photos
+                                </div>
+                            </a>
+            
+                            <a href="!#">
+                                <div
+                                    class="text-sm absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                                    <span class="font-bold">15</span>
+                                    <small>April</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="px-6 py-4">
+            
+                            <a href="#"
+                                class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Best
+                                Paris Images ever</a>
+                            <p class="text-gray-500 text-sm">
+                                Most Amazing View in Paris
+                            </p>
+                        </div>
+                        <div class="px-6 py-4 flex flex-row items-center">
+                            <span href="#"
+                                class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center">
+                                <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256 c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128 c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="ml-1">6 mins read</span></span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="text-center">
+                  <a href="" class="flex items-center border-2 border-black py-2 px-6 gap-2 rounded inline-flex items-center hover:bg-blue-600">
+                    <span class="text-black">
+                        View More
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                      </svg>
+                </a>
+              </div>
+              <div class="">
+                <h1 class="flex flex-row flex-nowrap items-center mt-24">
+                  <span class="flex-grow block border-t border-black"></span>
+                  <span class="flex-none block mx-4 px-4 py-2.5 text-md rounded leading-none font-medium bg-black text-white">
+                  Reels
+              </span>
+                  <span class="flex-grow block border-t border-black"></span>
+              </h1>
+              </div>
+              <div class="grid place-content-center ml-2 mt-5">
+                <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-1">
+        
+            <div class="flex justify-center ml-5 mt-5">
+              <div class="rounded-lg  w-[250px] h-[450px]">
+                  <a href="#!">
+                    <div class="artboard phone-1 rounded-lg"><iframe width="70%" height="75%" 
+                        src="https://www.youtube.com/embed/Y4o6a3-6ySw" class="rounded-lg"
+                        title="Ryan Reynolds &amp; Hugh Jackman FEEL the Xbox cheeky controllers! #deadpool #wolverine #xbox #unboxing" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                      
+                  </a>
+                  
+              </div>
+            </div>
+            <div class="flex justify-center ml-5 mt-5">
+                <div class="rounded-lg  w-[250px] h-[450px]">
+                    <a href="#!">
+                      <div class="artboard phone-1 rounded-lg"><iframe width="70%" height="75%" class="rounded-lg"
+                        src="https://www.youtube.com/embed/Ay0dEdINISE" title="BIG BONED..🦴 Jean Georges Steakhouse #BoneMarrow #Shorts" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </iframe>
+                    </div>
+                        
+                    </a>
+                    
+                </div>
+              </div>
+              <div class="flex justify-center ml-5 mt-5">
+                <div class="rounded-lg  w-[250px] h-[450px]">
+                    <a href="#!">
+                      <div class="artboard phone-1 rounded-lg"><iframe width="70%" height="75%" class="rounded-lg"
+                        src="https://www.youtube.com/embed/efvvh_tpfKU" title="Bye Bye Bye Deadpool Dance, Best Ever Scene #shorts #trending #dance #viralshorts #deadpool" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                        
+                    </a>
+                    
+                </div>
+              </div>
+              <div class="flex justify-center ml-5 mt-5">
+                <div class="rounded-lg w-[250px] h-[450px]">
+                    <a href="#!">
+                      <div class="artboard phone-1 rounded-lg"><iframe width="70%" height="75%" class="rounded-lg"
+                        src="https://www.youtube.com/embed/sMVIBr-7hgE" 
+                        title="Deadpool &amp; Wolverine | Official Trailer | In Theaters July 26" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                        
+                    </a>
+                    
+                </div>
+              </div>
+          </div>
+              
+          </div>
+          <div class="text-center">
+            <a href="" class="flex items-center border-2 border-black py-2 px-6 gap-2 rounded inline-flex items-center hover:bg-blue-600">
+              <span class="text-black">
+                  View More
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+          </a>
+        </div>
+        </div>
+        </div>
+    
 
-  </body>
+</body>
 </html>
