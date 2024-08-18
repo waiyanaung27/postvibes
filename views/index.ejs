@@ -7,58 +7,81 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 <body>
-    <% include ./partial/navbar %>
-   
-    <div class="dropdown">
+  
+  
+    <div class="dropdown lg:hidden">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-menu-button-wide" viewBox="0 0 16 16">
                 <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5z"/>
                 <path d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m10.823.323-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0M0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
               </svg>
         </div>
+        <a class="btn btn-ghost text-2xl">PostVibe</a>
             <div class="menu menu-sm dropdown-content top-0 z-[1] left-0 p-2 w-[229px] text-center bg-base-200 rounded-lg">
-                <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-                        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
-                      </svg>
-                      <span class="text-[15px] ml-4 text-black">Home</span>
-                </div>
-                <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
-                        <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"/>
-                      </svg>
-                      <span class="text-[15px] ml-4 text-black">Reels</span>
-            
-                </div>
-                <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                      </svg>
-                      <span class="text-[15px] ml-4 text-black">Myprofile</span>
-            
-                </div>
-                <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
-                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
-                      </svg>
-                      <span class="text-[15px] ml-4 text-black">Contact</span>
-            
-                </div>
-                <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
-                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
-                      </svg>
-                      <span class="text-[15px] ml-4 text-black">Noti</span>
-            
-                </div>
-                <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
-                        <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
-                      </svg>
-                      <span class="text-[15px] ml-4 text-black">Setting</span>
-            
-                </div>
+              
+              <div class="items-center duration-300 cursor-pointer mr-3">
+                  <div class="form-control mb-auto">
+                    <input
+                      type="search"
+                      placeholder="Search"
+                      class="input input-bordered  rounded-3xl input-sm"
+                    />
+                  </div>
+              </div>
+              <a href="index">
+              <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                      <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+                    </svg>
+                    <span class="text-[15px] ml-4 text-black">Home</span>
+              </div>
+            </a>
+            <a href="reels">
+              <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
+                      <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"/>
+                    </svg>
+                    <span class="text-[15px] ml-4 text-black">Reels</span>
+          
+              </div>
+            </a>
+            <a href="profile">
+              <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                    </svg>
+                    <span class="text-[15px] ml-4 text-black">Myprofile</span>
+          
+              </div>
+            </a>
+            <a href="contact">
+              <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                      <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
+                    </svg>
+                    <span class="text-[15px] ml-4 text-black">Contact</span>
+          
+              </div>
+            </a>
+              <a href="noti">
+              <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                      <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+                    </svg>
+                    <span class="text-[15px] ml-4 text-black">Noti</span>
+          
+              </div>
+            </a>
+            <a href="setting">
+              <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                      <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                    </svg>
+                    <span class="text-[15px] ml-4 text-black">Setting</span>
+          
+              </div>
+            </a>
                 <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"/>
@@ -70,15 +93,1132 @@
                 </div>
       
     </div>
-    
+    <div class="text-end">
+      <div
+        title="Change Theme"
+        class="dropdown dropdown-end hidden [@supports(color:oklch(0%_0_0))]:block z-20"
+      >
+        <div tabindex="0" role="button" class="btn btn-ghost">
+          <svg
+            width="20"
+            height="20"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="h-5 w-5 stroke-current md:hidden"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+            ></path>
+          </svg>
+          <span class="hidden font-normal md:inline">Theme</span>
+          <svg
+            width="12px"
+            height="12px"
+            class="hidden h-2 w-2 fill-current opacity-60 sm:inline-block"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 2048 2048"
+          >
+            <path
+              d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"
+            ></path>
+          </svg>
+        </div>
+        <div
+          tabindex="0"
+          class="dropdown-content bg-base-200 text-base-content rounded-box top-px h-[28.6rem] max-h-[calc(100vh-10rem)] w-56 overflow-y-auto border border-white/5 shadow-2xl outline outline-1 outline-black/5 mt-16"
+        >
+          <div class="grid grid-cols-1 gap-3 p-3">
+            <button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="light"
+              onclick="localStorage.setItem('theme', 'light'); location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="light"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">light</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="dark"
+              onclick="localStorage.setItem('theme', 'dark');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="dark"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">dark</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="cupcake"
+              onclick="localStorage.setItem('theme', 'cupcake');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="cupcake"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">cupcake</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="bumblebee"
+              onclick="localStorage.setItem('theme', 'bumblebee');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="bumblebee"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">bumblebee</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="emerald"
+              onclick="localStorage.setItem('theme', 'emerald');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="emerald"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">emerald</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="corporate"
+              onclick="localStorage.setItem('theme', 'corporate');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="corporate"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">corporate</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="synthwave"
+              onclick="localStorage.setItem('theme', 'synthwave');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="synthwave"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">synthwave</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="retro"
+              onclick="localStorage.setItem('theme', 'retro');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="retro"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">retro</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="cyberpunk"
+              onclick="localStorage.setItem('theme', 'cyberpunk');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="cyberpunk"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">cyberpunk</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="valentine"
+              onclick="localStorage.setItem('theme', 'valentine');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="valentine"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">valentine</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="halloween"
+              onclick="localStorage.setItem('theme', 'halloween');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="halloween"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">halloween</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="garden"
+              onclick="localStorage.setItem('theme', 'garden');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="garden"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">garden</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="forest"
+              onclick="localStorage.setItem('theme', 'forest');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="forest"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">forest</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="aqua"
+              onclick="localStorage.setItem('theme', 'aqua');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="aqua"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">aqua</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="lofi"
+              onclick="localStorage.setItem('theme', 'lofi');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="lofi"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">lofi</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="pastel"
+              onclick="localStorage.setItem('theme', 'pastel');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="pastel"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">pastel</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="fantasy"
+              onclick="localStorage.setItem('theme', 'fantasy');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="fantasy"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">fantasy</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="wireframe"
+              onclick="localStorage.setItem('theme', 'wireframe');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="wireframe"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">wireframe</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="black"
+              onclick="localStorage.setItem('theme', 'black');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="black"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">black</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="luxury"
+              onclick="localStorage.setItem('theme', 'luxury');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="luxury"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">luxury</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="dracula"
+              onclick="localStorage.setItem('theme', 'draula');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="dracula"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">dracula</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="cmyk"
+              onclick="localStorage.setItem('theme', 'cmyk');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="cmyk"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">cmyk</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="autumn"
+              onclick="localStorage.setItem('theme', 'autumn');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="autumn"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">autumn</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="business"
+              onclick="localStorage.setItem('theme', 'business');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="business"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">business</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="acid"
+              onclick="localStorage.setItem('theme', 'acid');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="acid"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">acid</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="lemonade"
+              onclick="localStorage.setItem('theme', 'lemonade');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="lemonade"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">lemonade</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="night"
+              onclick="localStorage.setItem('theme', 'night');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="night"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">night</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="coffee"
+              onclick="localStorage.setItem('theme', 'coffee');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="coffee"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">coffee</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="winter"
+              onclick="localStorage.setItem('theme', 'winter');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="winter"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">winter</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="dim"
+              onclick="localStorage.setItem('theme', 'dim');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="dim"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">dim</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="nord"
+              onclick="localStorage.setItem('theme', 'nord');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="nord"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">nord</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button
+            ><button
+              class="outline-base-content text-start outline-offset-4"
+              data-act-class="[&amp;_svg]:visible"
+              data-set-theme="sunset"
+              onclick="localStorage.setItem('theme', 'sunset');location.reload();"
+            >
+              <span
+                class="bg-base-100 rounded-btn text-base-content block w-full cursor-pointer font-sans"
+                data-theme="sunset"
+                ><span class="grid grid-cols-5 grid-rows-3"
+                  ><span
+                    class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="invisible h-3 w-3 shrink-0"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      ></path>
+                    </svg>
+                    <span class="flex-grow text-sm">sunset</span>
+                    <span class="flex h-full shrink-0 flex-wrap gap-1"
+                      ><span class="bg-primary rounded-badge w-2"></span>
+                      <span class="bg-secondary rounded-badge w-2"></span>
+                      <span class="bg-accent rounded-badge w-2"></span>
+                      <span
+                        class="bg-neutral rounded-badge w-2"
+                      ></span></span></span></span
+              ></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script>
+    console.log(localStorage.getItem("theme"));
+    document
+      .getElementsByTagName("html")[0]
+      .setAttribute("data-theme", localStorage.getItem("theme"));
+  </script>
     <div class="hidden lg:flex">
-      <div class="sidebar fixed top-20 bottom-0 lg:left-0 p-2 w-[229px] overflow-y-auto text-center bg-base-200">
+      <div class="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-[15%] overflow-y-auto text-center bg-base-200">
+        <a class="btn btn-ghost text-2xl">PostVibe</a>
+        <div class="items-center duration-300 cursor-pointer mr-3">
+            <div class="form-control mb-auto">
+              <input
+                type="search"
+                placeholder="Search"
+                class="input input-bordered  rounded-3xl input-sm"
+              />
+            </div>
+        </div>
+        <a href="index">
         <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
                 <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
               </svg>
               <span class="text-[15px] ml-4 text-black">Home</span>
         </div>
+      </a>
+      <a href="reels">
         <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
                 <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"/>
@@ -86,6 +1226,8 @@
               <span class="text-[15px] ml-4 text-black">Reels</span>
     
         </div>
+      </a>
+      <a href="profile">
         <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
@@ -94,6 +1236,8 @@
               <span class="text-[15px] ml-4 text-black">Myprofile</span>
     
         </div>
+      </a>
+      <a href="contact">
         <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
                 <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
@@ -101,6 +1245,8 @@
               <span class="text-[15px] ml-4 text-black">Contact</span>
     
         </div>
+      </a>
+        <a href="noti">
         <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
                 <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
@@ -108,6 +1254,8 @@
               <span class="text-[15px] ml-4 text-black">Noti</span>
     
         </div>
+      </a>
+      <a href="setting">
         <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
                 <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
@@ -115,6 +1263,7 @@
               <span class="text-[15px] ml-4 text-black">Setting</span>
     
         </div>
+      </a>
         <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer border-solid border-2 border-black hover:bg-blue-600 text-black mr-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"/>
@@ -130,6 +1279,7 @@
         <div class="w-[15%]  hidden lg:flex">
             </div>
         <div class="lg:w-[85%]">
+          
             <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
                 <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
                     <div class="rounded overflow-hidden shadow-lg">

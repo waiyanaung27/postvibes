@@ -38,4 +38,35 @@ router.get("/reply", function (req, res) {
   res.render("reply");
 });
 
+router.get("/OthersProfile", function (req, res) {
+  res.render("OthersProfile");
+});
+
+router.get("/AllPosts", function (req, res) {
+  res.render("AllPosts");
+});
+
+router.get("/notification", function (req, res) {
+  res.render("notification");
+});
+
+router.get("/forgotPassword", function (req, res) {
+  res.render("forgotPassword");
+}); 
+
+router.get("/AllReels", function (req, res) {
+  res.render("AllReels");
+});
+
+router.get("/ComfirmCode", function (req, res) {
+  res.render("ComfirmCode");
+});
+
+router.get("/following", function (req, res) {
+  res.render("following");
+});
+
+router.get("/follower", function (req, res) {
+  res.render("follower");
+});
 module.exports = router;
