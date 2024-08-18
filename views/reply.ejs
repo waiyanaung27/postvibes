@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="retro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <% include ./partial/navbar %>
+
+    <form class="bg-white p-4 rounded-lg shadow-md">
+    <h3 class="mb-3 text-3xl font-bold">Reply to <span>
+        John Doe
+    </span> </h3>
+    
+    <span class="text-xl flex items-center text-red-500 justify-normal -mt-4 mb-2 mx-80">Cancel Reply</span> 
+    
+    <form class="bg-white p-4 rounded-lg shadow-md">
+    <div class="mb-4">
+       
+        <textarea
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="comment" rows="3" placeholder="Enter your comment"></textarea>
+    </div>
+
+    <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2" for="name">
+            Name
+        </label>
+        <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="name" type="text" placeholder="Enter your name">
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="email">
+          Email
+      </label>
+      <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="email" type="text" placeholder="Enter your email">
+  </div>
+</form>
+
+
+</form>
+    
+
+
+  </body>
+</html>
+
+
+
+
+    

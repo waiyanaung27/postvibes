@@ -34,4 +34,8 @@ router.get("/accountSetting", function (req, res) {
   res.render("accountSetting");
 });
 
+router.get("/reply", function (req, res) {
+  res.render("reply");
+});
+
 module.exports = router;
