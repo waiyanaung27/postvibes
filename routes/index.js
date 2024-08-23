@@ -18,8 +18,8 @@ router.get("/createPost", function (req, res) {
   res.render("createpost");
 });
 
-router.get("/profile", function (req, res) {
-  res.render("profile");
+router.get("/myProfile", function (req, res) {
+  res.render("myProfile");
 });
 
 router.get("/postdetail", function (req, res) {
@@ -30,8 +30,8 @@ router.get("/blank", function (req, res) {
   res.render("blank");
 });
 
-router.get("/accountSetting", function (req, res) {
-  res.render("accountSetting");
+router.get("/editprofile", function (req, res) {
+  res.render("editprofile");
 });
 
 router.get("/reply", function (req, res) {
