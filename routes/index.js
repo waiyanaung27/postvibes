@@ -70,4 +70,19 @@ router.get("/follower", function (req, res) {
   res.render("follower");
 });
 
+router.get("/editprofile", function (req, res) {
+  res.render("editprofile");
+});
+
+router.get("/successful", function(req, res){
+  res.render("successful");
+});
+
+router.get("/newPassword", function(req, res){
+  res.render("newPassword");
+});
+
+router.get("/verifyCode", function(req, res){
+  res.render("verifyCode");
+});
 module.exports = router;
