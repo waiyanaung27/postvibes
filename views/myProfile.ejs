@@ -8,7 +8,7 @@
   </head>
   <body>
     <% include ./partial/navbar %>
-    <div class="flex-shrink-0 px-2 py-1 mt-6 items-center justify-center">
+    <div class="flex-shrink-0 px-2 py-1 mt-8 items-center justify-center">
         <!-- Search Profile -->
         <div class="flex justify-center items-center">
             <form action="/search" class="max-w-[480px] w-full px-4">
@@ -29,7 +29,7 @@
         </div>
 
         <div class="dropdown">
-            <div tabindex="0" role="button" class="btn m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+            <div tabindex="0" role="button" class="btn m-1 ml-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
               </svg>&nbsp;Create</div>
             <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
@@ -43,7 +43,7 @@
               </svg>&nbsp;Create
         </a> -->
         <br>
-        <a role="button" class="btn m-1 mx-1 font-medium rounded-circle shadow "
+        <a role="button" class="btn m-1 ml-4 mx-1 font-medium rounded-circle shadow "
             href="/editprofile"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -76,8 +76,8 @@
               </div>
           </div>
           <div class="py-5">
-            <h3 class="font-bold text-2xl text-gray-800 dark:text-white mb-1">JaxStone</h3>
-                <div class="inline-flex text-gray-700 dark:text-gray-300 items-center">
+            <h3 class="font-bold text-xl text-base dark:text-black mb-1">JaxStone</h3>
+                <div class="inline-flex font-medium dark:text-gray-300 items-center">
                     <svg class="h-5 w-5 text-gray-400 dark:text-gray-600 mr-1" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                         <path class=""
@@ -85,7 +85,7 @@
                     </svg>
                     New York, NY
                 </div>
-                <p class="font-semibold text-lg text-gray-800 dark:text-white mt-3 mb-1"><i>Dreamer, Believer, Achiever</i></p>
+                <p class="font-semibold text-lg text-base dark:text-black mt-3 mb-1"><i>Dreamer, Believer, Achiever</i></p>
           </div>
     </header>
 
@@ -114,7 +114,7 @@
                 2k
             </button>
         </div>
-        <div class="flex items-center">
+        <!-- <div class="flex items-center">
             <button type="button" class="flex items-center w-full px-3 py-2 text-base font-medium text-black bg-white border-t border-b border-l rounded-l-md hover:bg-gray-100">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 1792 1792">
                     <path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
@@ -125,14 +125,14 @@
             <button type="button" class="w-full px-3 py-2 text-base font-medium text-black bg-white border rounded-r-md hover:bg-gray-100">
                 3.5k
             </button>
-        </div>
+        </div> -->
         <div class="dropdown">
             <div tabindex="0" role="button" class="btn m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
                 <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
               </svg></div>
             <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
               <li><a href="#">Unfollow</a></li>
-              <li><a href="#">Unfavorite</a></li>
+              <li><a href="#">Block</a></li>
             </ul>
           </div>
         <!-- <div class="flex items-center">
