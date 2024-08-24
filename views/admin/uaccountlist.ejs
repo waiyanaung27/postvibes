@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theem="white">
+<html lang="en" data-theme="valentine">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,176 @@
     <link rel='stylesheet' href='/stylesheets/style.css'/>
 </head>
 <body>
+
+    
     <% include ../admin/nav %>
+    <div
+          class="mt-6 md:text-4xl sm:text-3xl text-2xl text-center font-serif font-extrabold   mb-6 ">
+          Account List</div>
+
+    <div class="overflow-x-auto lg:mx-0.5 md:mx-2">
+          <table class="min-w-full divide-y divide-gray-200 overflow-x-auto">
+            <thead class="bg-gray-50">
+                <tr>
+                    <th scope="col" class="px-6 py-3 text-left text-md font-medium text-black uppercase tracking-wider">
+                        Name
+                    </th>
+                    <th scope="col" class="px-6 py-3 text-left text-md font-medium text-black uppercase tracking-wider">
+                        Email
+                    </th>
+                    <th scope="col" class="px-6 py-3 text-left text-md font-medium text-black uppercase tracking-wider">
+                        Status
+                    </th>
+                   
+                    
+                    <th scope="col" class="px-6 py-3 text-left text-md font-medium text-black uppercase tracking-wider">
+                        Create Date
+                    </th>
+                    <th scope="col" class="px-6 py-3 text-left text-md font-medium text-black uppercase tracking-wider">
+                        Actions
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 h-10 w-10">
+                                <img class="h-10 w-10 rounded-full" src="https://i.pravatar.cc/150?img=1" alt="">
+                            </div>
+                            <div class="ml-4">
+                                <div class="text-sm font-medium text-gray-900">
+                                    Jane Cooper
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="text-sm text-gray-900">James123@gmail.com</div>
+                        
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                            Active
+                        </span>
+                    </td>
+                    <td class="p-5 whitespace-nowrap text-sm leading-6 font-medium text-gray-900"> Jun. 24, 2023 </td>
+                    
+
+                    <td class="px-6 py-4 whitespace-nowrap  text-sm font-medium">
+                        <a href="accountdetail" class="text-indigo-600 hover:text-indigo-900">Detail</a>
+                        
+                    </td>
+                </tr>
+        
+        
+        
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 h-10 w-10">
+                                <img class="h-10 w-10 rounded-full" src="https://i.pravatar.cc/150?img=1" alt="">
+                            </div>
+                            <div class="ml-4">
+                                <div class="text-sm font-medium text-gray-900">
+                                    Jane Cooper
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="text-sm text-gray-900">James123@gmail.com</div>
+                        
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-500 text-white">
+                            Inactive
+                        </span>
+                    </td>
+                   
+                    <td class="p-5 whitespace-nowrap text-sm leading-6 font-medium text-gray-900"> Jun. 24, 2023 </td>
+                    <td class="px-6 py-4 whitespace-nowrap  text-sm font-medium">
+                        <a href="#" class="text-indigo-600 hover:text-indigo-900">Detail</a>
+                        
+                    </td>
+                </tr>
+        
+        
+        
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 h-10 w-10">
+                                <img class="h-10 w-10 rounded-full" src="https://i.pravatar.cc/150?img=1" alt="">
+                            </div>
+                            <div class="ml-4">
+                                <div class="text-sm font-medium text-gray-900">
+                                    Jane Cooper
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="text-sm text-gray-900">James123@gmail.com</div>
+                        
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                            Active
+                        </span>
+                    </td>
+                   
+                    <td class="p-5 whitespace-nowrap text-sm leading-6 font-medium text-gray-900"> Jun. 24, 2023 </td>
+                    <td class="px-6 py-4 whitespace-nowrap  text-sm font-medium">
+                        <a href="accountdetail" class="text-indigo-600 hover:text-indigo-900">Detail</a>
+                        
+                    </td>
+                </tr>
+        
+        
+        
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 h-10 w-10">
+                                <img class="h-10 w-10 rounded-full" src="https://i.pravatar.cc/150?img=1" alt="">
+                            </div>
+                            <div class="ml-4">
+                                <div class="text-sm font-medium text-gray-900">
+                                    Jane Cooper
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="text-sm text-gray-900">James123@gmail.com</div>
+                        
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                            Active
+                        </span>
+                    </td>
+                    <td class="p-5 whitespace-nowrap text-sm leading-6 font-medium text-gray-900"> Jun. 24, 2023 </td>
+                    <td class="px-6 py-4 whitespace-nowrap  text-sm font-medium">
+                        <a href="#" class="text-indigo-600 hover:text-indigo-900">Detail</a>
+                        
+                    </td>
+                </tr>
+        
+        
+        
+        
+                <!-- More rows... -->
+        
+            </tbody>
+        </table>
+    </div>
+
     
 </body>
 </html>

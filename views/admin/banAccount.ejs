@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="luxury">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+
+    <div class="max-w-screen-lg mx-auto mt-20 p-5">
+        <div class="grid grid-cols-1 md:grid-cols-12 border">
+
+            <form class="md:col-span-8 p-10">
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+                        <div class="text-left mt-5">
+                            <lable class="text-lg font-semibold">From</lable> <br>
+                            <input id="datepicker" class="border-2 border-gray-300 rounded px-3 py-2 w-56" type="text"
+                                placeholder="Select a date">
+                        </div>
+                        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+                        <script>
+                            flatpickr("#datepicker", {
+                                // Configuration options for Flatpickr
+                                // You can customize the appearance and behavior here
+                            });
+                        </script>
+                    </div>
+                    <div class="w-full md:w-1/2 px-3">
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+                        <div class="text-left mt-5">
+                            <lable class="text-lg font-semibold">To</lable> <br>
+
+                            <input id="datepicker" class="border-2 border-gray-300 rounded px-3 py-2 w-56" type="text"
+                                placeholder="Select a date"  >
+                                
+                               
+                        </div>
+                        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+                        <script>
+                            flatpickr("#datepicker", {
+                                // Configuration options for Flatpickr
+                                // You can customize the appearance and behavior here
+                            });
+                        </script>
+                    </div>
+                </div>
+               
+    
+            </form>
+
+
+            <div class="bg-gray-300 md:col-span-4 p-10 text-white">
+                
+                <div class="p-4 w-full mx-auto max-w-2xl">
+                    
+                
+                    <div>
+                        <label class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                             <input type="radio" name="day">
+                             <i class="pl-2">24 hours</i>
+                        </label>
+                
+                        <label class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                            <input type="radio" name="day">
+                            <i class="pl-2">7 days</i>
+                        </label>
+                
+                        <label class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                              <input type="radio" name="day">
+                              <i class="pl-2">30 days</i>
+                         </label>
+                         <select name="day" class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer " >
+                            <option value="day">Custom number of days</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                
+                          <button type="button" class="focus:outline-black text-white text-sm mt-4 ms-10 py-2 px-12 border-b-4 border-blue-600 bg-blue-500 hover:bg-red-400">Apply</button>
+                    </div>
+                </div>
+    
+            </div>
+            
+    
+        </div>
+    </div>
+
+</body>
+</html>
