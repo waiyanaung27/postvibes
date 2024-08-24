@@ -13,12 +13,12 @@
 
       <div class="flex flex-col justify-center p-8 md:p-14">
 
-        <span class="mb-3 text-4xl font-bold italic">Postvibes</span>
+        <span class=" text-4xl font-bold italic text-center">Postvibes</span>
 
-        <span class=" text-purple-900 mb-8 font-serif">
-          Create your account.It's free and only take a minute
+        <span class=" text-pruple-900  font-sans text-2xl mt-8 font-semibold">
+          Register for an account
         </span>
-
+        
         <div class="py-4">
           <h4 class="px-1 font-serif ">Username</h4>
           <label class="input input-bordered flex items-center gap-2">   
@@ -66,7 +66,7 @@
         <h4 class="px-1 font-serif">Password</h4>
         <label class="input input-bordered flex items-center gap-2">
           
-          <input type="password" class="grow" value="password" />
+          <input type="password" class="grow" placeholder="Password" />
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"
@@ -81,7 +81,7 @@
         <div class="py-4">
         <h4 class="px-1 font-serif">Comfirm Password</h4>
         <label class="input input-bordered flex items-center gap-2">
-          <input type="password" class="grow" value="password" />
+          <input type="password" class="grow" placeholder="ComfirmPassword" />
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
@@ -89,15 +89,16 @@
         </label>
         <div class=" py-2 mr-24">
           <input type="checkbox" name="ch" id="ch" class="mr-2"/>
-          <span class="text-md">I accept the <span class="text-violet-600">Terms of Use</span> &  <span class="text-violet-600">Privacy Policy</span></span>
+          <span class="text-md">I accept the <a href="Termofuse" class="label-text-alt link link-hover text-base/6  text-violet-600">Term of Use</a> &  <a href="pp" class="label-text-alt link link-hover text-base/6  text-violet-600">Privacy Policy</a></span>
         </div>
       </div>
-        <span class="font-bold text-md mx-12">Already have an Account?<a href="login" class="label-text-alt link link-hover text-base/6 px-3 text-blue-600">Login</a></span>
+      <div class="form-control py-3">
+        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md shadow-sm">Register</button>
       </div>
-      <div class="form-control mt-6">
-        <button class="btn btn-primary">Register</button>
+      <div class=" text-center" >
+        <span class="font-bold text-md">Already have an Account?</span>
+        <a href="login" class="label-text-alt link link-hover text-lg text-center font-bold text-blue-600 px-3">Login</a>
       </div>
-      
       </div>
 
     </div>
