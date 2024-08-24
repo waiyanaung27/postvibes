@@ -69,4 +69,5 @@ router.get("/following", function (req, res) {
 router.get("/follower", function (req, res) {
   res.render("follower");
 });
+
 module.exports = router;
