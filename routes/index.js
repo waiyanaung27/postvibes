@@ -70,6 +70,10 @@ router.get("/follower", function (req, res) {
   res.render("follower");
 });
 
+router.get("/favorite", function (req, res) {
+  res.render("favorite");
+});
+
 router.get("/editprofile", function (req, res) {
   res.render("editprofile");
 });
