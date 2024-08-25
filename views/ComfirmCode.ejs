@@ -8,6 +8,7 @@
   </head>
   <body>
     <% include ./partial/navbar %>
+
     <div class="flex flex-1 flex-col  justify-center space-y-5 max-w-md mx-auto mt-24">
       <div class="flex flex-col space-y-2 text-center">
           <h2 class="text-3xl md:text-4xl font-bold">Confirm OTP</h2>
@@ -15,13 +16,96 @@
               Enter the OTP we just sent you.
           </p>
       </div>
-      <div class="flex flex-col max-w-md space-y-5">
-          <input type="text" placeholder="otp"
-                class="flex px-3 py-2 md:px-4 md:py-3 border-2 border-black rounded-lg font-medium placeholder:font-normal" />
-          <button class="flex items-center justify-center flex-none px-3 py-2 md:px-4 md:py-3 border-2 rounded-lg font-medium border-black bg-black text-white">
-              Confirm
-          </button>
-      </div>
-  </div>
+      <div class="max-w-md mx-auto border max-w-sm mt-20 rounded">
+        <form class="shadow-md px-4 py-6">
+            <div class="flex justify-center gap-2 mb-6">
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="otp" type="text" placeholder="Enter OTP">
+            </div>
+            <div class="flex items-center justify-center">
+                 <button class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="my_modal_1.showModal()" type="button">
+                    Verify
+                </button>
+                <dialog id="my_modal_1" class="modal">
+                  <div class= "modal-box ">
+                    <div class="space-y-2 p-2">
+                    <div class=" justify-center text-center dark:text-white">
+                      <div class=" flex items-center justify-center">
+                      <div
+                          class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-green-100 sm:mx-0 sm:h-10 sm:w-10">
+                          <svg class="h-6 w-6 text-green-600 " stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                      </div>
+                    </div>
+                  
+                    <p class="py-4 text-green font-mono text-2xl font-bold">Successful</p>
+                  </div>
+                </div>
+                    <div class="modal-action">
+                      <form method="dialog">
+                        <a href="#"><button type="button"  onclick="closeModal()"class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">OK</button>
+                       </form>
+                    </div>
+                  </div>
+                </dialog>
+
+                <!-- <button class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="my_modal_3.showModal()" type="button">
+                  Verify
+                </button>
+                <dialog id="my_modal_3" class="modal">
+                <div class= "modal-box ">
+                  <div class="space-y-2 p-2">
+                  <div class=" justify-center text-center dark:text-white">
+                  <p class="py-4 text-green font-mono text-2xl font-bold">The OTP is invalid</p>
+                </div>
+              </div>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <div class="flex items-center justify-center mx-20">
+                      <a href="#"><button type="button" onclick="closeModal()" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm  w-64   py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">OK</button>
+                      </div>
+                     </form>
+                  </div>
+                </div>
+              </dialog> -->
+                <!-- Open the modal using ID.showModal() method -->
+                
+                <a class="inline-block align-baseline font-bold text-base text-teal-500 hover:text-teal-800 ml-4"  onclick="my_modal_2.showModal()" href="#">
+                    Resend OTP <samll>(0:36)</samll>
+                </a>
+                <dialog id="my_modal_2" class="modal">
+                  <div class= "modal-box ">
+                    <div class="space-y-2 p-2">
+                    <div class=" justify-center text-center dark:text-white">
+                      <div class=" flex items-center justify-center">
+                        <img class="mx-auto h-12 w-auto" src="https://www.svgrepo.com/show/499664/user-happy.svg" alt="" />
+                    </div>
+                  
+                    <p class="py-4 text-green font-mono text-2xl font-bold">"We will resend the OTP to you" </p>
+                  </div>
+                </div>
+                    <div class="modal-action">
+                      <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <a href="#"><button type="button"  onclick="closeModal()"class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">OK</button>
+                          <!-- <button type="button" onclick="closeModal()" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">OK</button> -->
+
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+
+            </div>
+        </form>
+    </div>
+    <script>
+      function closeModal() {
+           document.getElementById('my_modal_1').classList.add('hidden');
+          document.getElementById('my_modal_2').classList.add('hidden');
+          document.getElementById('my_modal_3').classList.add('hidden');
+      }
+  </script>
+
   </body>
+
 </html>

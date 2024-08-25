@@ -85,4 +85,8 @@ router.get("/newPassword", function(req, res){
 router.get("/verifyCode", function(req, res){
   res.render("verifyCode");
 });
+
+router.get("/createReel", function (req, res) {
+  res.render("createreel");
+});
 module.exports = router;
