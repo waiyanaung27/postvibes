@@ -8,7 +8,7 @@
   </head>
   <body>
     <% include ./partial/navbar %>
-    <span class="mb-3 text-2xl font-bold flex justify-start mx-4">Post Details</span>
+    
 
     <div class="mt-1 grid grid-cols-1 font-sm md:grid-cols-1 col-lg-4 col-md-12 col-md-12">
 
@@ -71,7 +71,44 @@
 
         </p><br>
 
-   
+        <div class="entry-content article-body">
+            <div class="hero-image hero-image-main hero-image-main3">
+                <div class="one-one-ratio">
+    
+            <div class="hero-ratio flex justify-center items-center"><img src="https://images.unsplash.com/photo-1530878902700-5ad4f9e4c318?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHN3aXR6ZXJsYW5kfGVufDB8fDB8fHww" alt="Switzerland" width="800" height="800" class="center">
+            </div><br>
+
+        </div>
+        </div>
+        </div>
+
+        <p class="text-justify mx-2 lg:mx-32">
+            Switzerland's many small valleys separated by high mountains often host unique ecologies. The mountainous regions themselves offer a 
+            rich range of plants not found at other altitudes. The climatic, geological and topographical conditions of the alpine region make 
+            for a fragile ecosystem that is particularly sensitive to climate change. According to the 2014 Environmental Performance 
+            Index, Switzerland ranks first among 132 nations in safeguarding the environment, due to its high scores on environmental public
+             health, its heavy reliance on renewable sources of energy (hydropower and geothermal energy), and its level of greenhouse gas 
+             emissions. In 2020 it was ranked third out of 180 countries. The country pledged to cut GHG emissions by 50% by 2030 compared
+              to the level of 1990 and plans to reach zero emissions by 2050.
+        </p><br>
+
+        <p class="text-justify mx-2 lg:mx-32">
+            However, access to biocapacity in Switzerland is far lower than the world average. In 2016, 
+            Switzerland had 1.0 hectares of biocapacity per person within its territory, 40 per cent 
+            less than world average of 1.6. In contrast, in 2016, Swiss consumption required 4.6 hectares 
+            of biocapacity – their ecological footprint, 4.6 times as much as Swiss territory can support.
+            The remainder comes from other countries and the shared resources (such as the atmosphere 
+            impacted by greenhouse gas emissions). Switzerland had a 2019 Forest Landscape Integrity
+            Index mean score of 3.53/10, ranking it 150th globally out of 172 countries.
+
+
+        </p>
+
+
+        <div class="grid grid-flow-col">
+            <a href="#" class="text-gray-500 mx-6 hover:text-gray-700 mr-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="26" height="26" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>Like</a>
+            <a href="#" class="text-gray-500 hover:text-gray-700 mr-10"><div class="flex justify-end"><svg class="flex justify-end" style="enable-background:new 0 0 24 24;" width="26" height="26" version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="info"></g><g id="icons"><path d="M21.7,10.2l-6.6-6C14.6,3.7,14,4.2,14,5v3c-4.7,0-8.7,2.9-10.6,6.8c-0.7,1.3-1.1,2.7-1.4,4.1   c-0.2,1,1.3,1.5,1.9,0.6C6.1,16,9.8,13.7,14,13.7V17c0,0.8,0.6,1.3,1.1,0.8l6.6-6C22.1,11.4,22.1,10.6,21.7,10.2z" id="share"></path></g></svg></div><p class="mb-3 flex justify-end">Share</p></a>
+        </div>
     
             
     </article>
@@ -82,31 +119,17 @@
 
   
 
+
 <div class="col-md-3 mx-3 lg:mx-10 grid-cols-6">
 <div class="mt-20">
     
-        
+    <h1 class="text-2xl font-bold mb-1 -mt-20">Comments Section</h1>
        
-            <h1 class="text-2xl font-bold mb-3 -mt-20">Comments Section</h1>
-       
-          
-            <button
-                  class="bg-sky-800 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                  type="submit" id="myButton">
-                  Write a Comment
-              </button>
-           
-            
-      
-        
-  
             <div class="p-6">
    
 
     <div class="rightside">
- 
-    
-       
+
       <h2 class="text-lg font-bold mb-4">Comments</h2>
       <div class="flex-col space-y-4">
 
@@ -122,11 +145,56 @@
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
 
-              <div>
-                <a href="#" class="text-gray-500 hover:bg-blue-600 mr-4"><i class="far fa-thumbs-up"></i> Like</a>
-                <a href="#" class="text-gray-500 hover:text-gray-700 mr-10"><i class="far fa-comment-alt"></i> Reply</a>
+       
+              <div class="">
+                <a href="#" class="text-gray-500 font-bold  mr-4"><i class="far fa-thumbs-up"></i> Like</a>
+             
+
+
+                <button class="btn btn-sm w-20" onclick="my_modal_4.showModal()">Reply</button>
+                <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
+                  <div class="modal-box">
+                    <h3 class="text-lg font-bold mb-4">Reply a comment</h3>
+                    <form class="p-4 rounded-lg shadow-md">
+                      <div class="mb-4">
+                         
+                          <textarea
+                              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                              id="comment" rows="3" placeholder="Enter your comment"></textarea>
+                      </div>
+                  
+                      <div class="mb-4">
+                          <label class="block text-gray-700 font-bold mb-2" for="name">
+                              Name
+                          </label>
+                          <input
+                              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                              id="name" type="text" placeholder="Enter your name">
+                      </div>
+                      <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="email">
+                            Email
+                        </label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="email" type="text" placeholder="Enter your email">
+                    </div>
+                  </form>
+                    <div class="modal-action">
+                      <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Cancel Reply</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+               
+              </div>
+
+           
+
                 
-            </div>
+
               
                
 
@@ -141,11 +209,51 @@
               <p class="text-gray-700">I agree with John. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <div>
-                <a href="#" class="text-gray-500 hover:bg-blue-600 mr-4"><i class="far fa-thumbs-up"></i> Like</a>
-                <a href="#" class="text-gray-500 hover:text-gray-700 mr-10"><i class="far fa-comment-alt"></i> Reply</a>
-                
-            </div>
+              <div class="">
+                <a href="#" class="text-gray-500 font-bold mr-4">Like</a>
+             
+
+
+                <button class="btn btn-sm w-20" onclick="my_modal_3.showModal()">Reply</button>
+                <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
+                  <div class="modal-box">
+                    <h3 class="text-lg font-bold mb-4">Reply a comment</h3>
+                    <form class="p-4 rounded-lg shadow-md">
+                      <div class="mb-4">
+                         
+                          <textarea
+                              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                              id="comment" rows="3" placeholder="Enter your comment"></textarea>
+                      </div>
+                  
+                      <div class="mb-4">
+                          <label class="block text-gray-700 font-bold mb-2" for="name">
+                              Name
+                          </label>
+                          <input
+                              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                              id="name" type="text" placeholder="Enter your name">
+                      </div>
+                      <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="email">
+                            Email
+                        </label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="email" type="text" placeholder="Enter your email">
+                    </div>
+                  </form>
+                    <div class="modal-action">
+                      <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Cancel Reply</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+               
+              </div>
+
 
           </div>
           <div class="p-4 rounded-lg shadow-2xl">
@@ -156,54 +264,58 @@
               <p class="text-gray-700" style="font-size: medium;">I have a different opinion. Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <div>
-                <a href="#" class="text-gray-500 hover:text-gray-700 mr-4"><i class="far fa-thumbs-up"></i> Like</a>
-                <a href="#" class="text-gray-500 hover:text-gray-700 mr-10"><i class="far fa-comment-alt"></i> Reply</a>
-                
-            </div>
+              <div class="">
+                <a href="#" class="text-gray-500 font-bold mr-4"><i class="far fa-thumbs-up"></i> Like</a>
+             
+
+
+                <button class="btn btn-sm w-20" onclick="my_modal_2.showModal()">Reply</button>
+                <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
+                  <div class="modal-box">
+                    <h3 class="text-lg font-bold mb-4">Reply a comment</h3>
+                    <form class="p-4 rounded-lg shadow-md">
+                      <div class="mb-4">
+                         
+                          <textarea
+                              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                              id="comment" rows="3" placeholder="Enter your comment"></textarea>
+                      </div>
+                  
+                      <div class="mb-4">
+                          <label class="block text-gray-700 font-bold mb-2" for="name">
+                              Name
+                          </label>
+                          <input
+                              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                              id="name" type="text" placeholder="Enter your name">
+                      </div>
+                      <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="email">
+                            Email
+                        </label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="email" type="text" placeholder="Enter your email">
+                    </div>
+                  </form>
+                    <div class="modal-action">
+                      <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Cancel Reply</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+               
+              </div>
+
 
           </div>
-
-        
-          <span class="hidden" id="myCom">
-          <form class="p-4 rounded-lg shadow-md">
-              <h3 class="text-lg font-bold mb-2">Add a comment</h3>
-              <div class="mb-4">
-                  <label class="block text-gray-700 font-bold mb-2" for="name">
-                      Name
-                  </label>
-                  <input
-                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                      id="name" type="text" placeholder="Enter your name">
-              </div>
-              <div class="mb-4">
-                <label class="block text-gray-700 font-bold mb-2" for="email">
-                    Email
-                </label>
-                <input
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="email" type="text" placeholder="Enter your email">
-            </div>
-              <div class="mb-4">
-                  <label class="block text-gray-700 font-bold mb-2" for="comment">
-                      Comment
-                  </label>
-                  <textarea
-                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                      id="comment" rows="3" placeholder="Enter your comment"></textarea>
-              </div>
-              <button
-                  class="bg-sky-500 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                  type="submit">
-                  Post Comment
-              </button>
-          </form>
+             
+          
       </div>
     
 
-</span>
-</div>
-
 </div>
 </div>
 
@@ -214,28 +326,56 @@
 
 
 
+<div class="flex-col space-y-4">
 
-  
+<button class="rounded flex focus:outline-none text-1xl font-medium bg-sky-800 hover:bg-cyan-700 text-white mx-2 sm:mx-16 py-2 px-4 focus:shadow-outline" 
+onclick="my_modal_5.showModal()">Write a comment</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="text-2xl font-bold">Add a comment</h3>
+    <div class="mb-4">
+        <label class="block text-gray-700 font-bold mt-3 mb-2" for="name">
+            Name
+        </label>
+        <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="name" type="text" placeholder="Enter your name">
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="email">
+          Email
+      </label>
+      <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="email" type="text" placeholder="Enter your email">
+  </div>
+    <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2" for="comment">
+            Comment
+        </label>
+        <textarea
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="comment" rows="3" placeholder="Enter your comment"></textarea>
+    </div>
 
-<script>
-    const myButton = document.getElementById("myButton");
-    const myCom = document.getElementById("myCom");
+    <form method="dialog">
+    <button
+        class="bg-sky-500 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        type="submit">
+        Post Comment
+    </button>
+
     
-    myButton.addEventListener("click", event => {
-          
-       if (myCom.style.display = "none") {
-        myCom.style.display = "block";
-        myButton.textContent = "Write a comment";
+        <button class="float-right mb-10 h-9 px-5 rounded-md text-white font-bold bg-red-500 hover:bg-red-400">Close</button>
+    </form>
 
-       } else {
-        myCom.style.display = "none";
-        myButton.textContent = "Show";
-       }
 
-       
-    });
+      </form>
+    </div>
+  </div>
+</dialog>
 
-</script>
+</div>
 
 
   </body>
