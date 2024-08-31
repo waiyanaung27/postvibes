@@ -1,0 +1,139 @@
+<div class="w-full">
+  <div
+    class="absolute bg-gray-800 text-white bottom-0 w-56 min-h-screen overflow-y-auto transition-transform transform -translate-x-full ease-in-out duration-300"
+    id="sidebar"
+  >
+    <!-- Your Sidebar Content -->
+    <div class="p-4">
+      <h1 class="text-2xl font-semibold">Dashboard</h1>
+      <ul class="mt-8">
+        <li class="mb-5 mt-2">
+          <a href="/admin" class="flex hover:text-indigo-400">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-house-heart-fill mr-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707z"
+              />
+              <path
+                d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018"
+              />
+            </svg>
+            Home</a
+          >
+        </li>
+        <li class="mb-5 mt-5">
+          <a
+            href="/admin/uaccountlist"
+            class="button flex hover:text-indigo-400"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-person-circle mr-2"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+              />
+            </svg>
+            Account List</a
+          >
+        </li>
+        <li class="mb-5 mt-5">
+          <a href="banpostlist" class="button flex hover:text-indigo-400">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-ban mr-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M15 8a6.97 6.97 0 0 0-1.71-4.584l-9.874 9.875A7 7 0 0 0 15 8M2.71 12.584l9.874-9.875a7 7 0 0 0-9.874 9.874ZM16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0"
+              />
+            </svg>
+            BanPost List</a
+          >
+        </li>
+        <li class="mb-5 mt-5">
+          <a href="#" class="block hover:text-indigo-400">Contact</a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="flex hover:text-indigo-400">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-door-closed-fill mr-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12 1a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V2a1 1 0 0 1 1-1zm-2 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+              />
+            </svg>
+            logout</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="flex-1 flex flex-col overflow-hidden">
+    <!-- Navbar -->
+    <div class="bg-white shadow">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center py-4 px-2">
+          <h1 class="text-3xl font-semibold">PostVibes</h1>
+
+          <button class="text-gray-500 hover:text-gray-600" id="open-sidebar">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Content Body -->
+  </div>
+</div>
+
+<script>
+  const sidebar = document.getElementById("sidebar");
+  const openSidebarButton = document.getElementById("open-sidebar");
+
+  openSidebarButton.addEventListener("click", (e) => {
+    e.stopPropagation();
+    sidebar.classList.toggle("-translate-x-full");
+  });
+
+  // Close the sidebar when clicking outside of it
+  document.addEventListener("click", (e) => {
+    if (!sidebar.contains(e.target) && !openSidebarButton.contains(e.target)) {
+      sidebar.classList.add("-translate-x-full");
+    }
+  });
+</script>
